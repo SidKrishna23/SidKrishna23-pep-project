@@ -49,14 +49,14 @@ public class ConnectionUtil {
 	 * @return an active connection to the database
 	 */
 	public static Connection getConnection() {
-		try {
+		try { 
 			return pool.getConnection();
-		} catch (SQLException e) {
+		 } catch (SQLException e) {
 			e.printStackTrace();
 		}
 
 		return null;
-	}
+ 	}
 
 	/**
 	 * For the purpose of testing, we will need to drop and recreate our database
